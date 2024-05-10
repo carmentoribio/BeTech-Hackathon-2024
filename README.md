@@ -8,3 +8,10 @@ Se recomienda a los participantes utilizar distintas herramientas de visión com
 *0.5 puntos extra si se implementa segmentación de objetos y se detectan otras clases que no sean barcos.
 
 Nota: se valorará la originalidad de la implementación y la limpieza del código
+
+### Dataset:
+4000 imágenes .png 80x80 RGB etiquetadas como 'barco' o 'no barco'. Cada imagen tiene como nombre de archivo {etiqueta}_{id escena}_{longitud}_{latitud}.png donde etiqueta = 1 representa 'barco', etiqueta = 0 representa 'no barco'.
+El dataset también es proporcionado en un JSON, llamado shipnet.json, que contiene los valores rgb de las imágenes, junto con las etiquetas 0 y 1 de cada imagen.
+
+### Notas:
+Durante el transcurso de la Hackathon no fuimos capaces de utilizar modelos de reconocimiento ya entrenados. La solución a la que llegamos fue entrenar nuestro propio modelo de reconocimiento de imágenes.
